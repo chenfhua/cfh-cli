@@ -18,16 +18,16 @@ export const templates: Map<string, TemplateInfo> = new Map([
         'Vite-Vue3-Typescript-tempalte',
         {
             name: 'Vite-Vue3-Typescript-tempalte',
-            downloadUrl: 'git@gitee.com:sohucw/admin-pro.git',
+            downloadUrl: 'https://gitee.com/chenfhua/admin-pc-pro.git',
             description: 'Vue3技术栈开发模板',
-            branch: 'dev11',
+            branch: 'dev1',
         },
     ],
     [
         'Vite-Vue3-移动端模板',
         {
             name: 'Vite-Vue3-Typescript-tempalte',
-            downloadUrl: 'git@gitee.com:sohucw/admin-pro.git',
+            downloadUrl: 'https://gitee.com/chenfhua/admin-pc-pro.git',
             description: 'Vue3技术栈开发模板',
             branch: 'h5',
         },
@@ -67,7 +67,7 @@ export const checkVersion = async (name: string, version: string) => {
             `检查到dawei最新版本： ${chalk.blackBright(latestVersion)}，当前版本是：${chalk.blackBright(version)}`
         );
         console.log(
-            `可使用： ${chalk.yellow('npm install dawei-cli@latest')}，或者使用：${chalk.yellow('dawei update')}更新`
+            `可使用： ${chalk.yellow('npm install cfh-cli@latest')}，或者使用：${chalk.yellow('cfh update')}更新`
         );
     }
     return need;

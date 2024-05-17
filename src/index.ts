@@ -2,12 +2,12 @@ import {Command} from 'commander';
 import {version} from '../package.json';
 import {create} from './command/create';
 import { update } from './command/update';
-const program = new Command('dawei');
+const program = new Command('cfh');
 program.version(version, '-v --version');
 
 program
     .command('update')
-    .description('更新脚手架 dawei-cli')
+    .description('更新脚手架 cfh-cli')
     .action(async () => {
         await update();
     });
